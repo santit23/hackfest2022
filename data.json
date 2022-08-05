@@ -38,7 +38,7 @@
           "I need help"
         ],
         "responses": [
-          "Here are some resources related to mental health\nI hope it helps",
+          "Here are some resources related to mental health\\nI hope it helps",
           "Check out the Resources tab to find many helpful articles, videos, etc related to mental health\nI hope it helps"
         ]
       },

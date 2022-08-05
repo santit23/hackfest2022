@@ -13,21 +13,43 @@
 
 <body>
   <!-- partial:index.partial.html -->
+  <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="#">HUDDLE</a>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#">Smth</a></li>
+                <li><a href="#">Smth1</a></li>
+                <li><a href="#">Contact</a></li>
+            
+            </ul>
+        </div>
+    </div>
+    <div class="header_text">
+        <h1>
+            Your Friendly<br> ChatBot!!
+        </h1>
+        <a href="#" class="btn resources">RESOURCES</a>
+    </div>
+  </div>
   <section class="msger">
     <header class="msger-header">
       <div class="msger-header-title">
-        <i class="fas fa-bug"></i> Huddle <i class="fas fa-bug"></i>
+        Huddle
       </div>
     </header>
 
     <main class="msger-chat">
       <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+        <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
 
         <div class="msg-bubble">
           <div class="msg-info">
             <div class="msg-info-name">Huddle</div>
-            <div class="msg-info-time">12:45</div>
+            
           </div>
 
           <div class="msg-text">
@@ -53,9 +75,9 @@
 
 
     // Icons made by Freepik from www.flaticon.com
-    const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
-    const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-    const BOT_NAME = "    Huddle";
+    const BOT_IMG = "https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=";
+    const PERSON_IMG = "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg";
+    const BOT_NAME = "Huddle";
     const PERSON_NAME = "You";
 
     msgerForm.addEventListener("submit", event => {

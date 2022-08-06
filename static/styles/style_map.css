@@ -18,11 +18,14 @@ header
   justify-content: space-between;
   align-items: center;
 }
-header .logo
+.logo a
 {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+    color: #fff;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .toggle
 {
@@ -53,7 +56,6 @@ header .logo
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #111; */
   transition: 0.5s;
   z-index: 2;
 }
@@ -82,57 +84,6 @@ header .logo
   background: #03a9f4;
   mix-blend-mode: lighten;
 }
-/* .text
-{
-  position: relative;
-  left: 300px;
-  top: 0px;
-  align-items: center;
-  z-index: 10;
-}
-
-.text h2
-{
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text h3
-{
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text p
-{
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-.text a
-{
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-.text a:hover
-{
-  letter-spacing: 6px;
-} */
 
 .map
 {
@@ -153,44 +104,21 @@ header .logo
     left: 100px;
     right: 400px;
     align-items: center;
-    
     z-index: 10;
 }
 
-/* .card
+.caption
 {
-  position: relative;
-  margin-top: 100px;
-  line-height: 40px;
-  padding: 100px;
-  color: rgb(255, 255, 255);
-  z-index: 10;
-}
-
-.card-header
-{
-    font-size: 2em;
-}
-
-.card a
-{
-    display: inline-block;
+    position: absolute;
+    color: #fff;
     font-size: 1em;
-    background: #fff;
-    padding: 5px 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 5px;
-    color: #111;
-    letter-spacing: 2px;
-    transition: 0.2s;
+    align-items: center;
+    top: 752px;
+    left:100px;
+    right:400px;
+    z-index: 10;
 }
 
-.card a:hover
-{
-  letter-spacing: 6px;
-} */
 
 .social
 {

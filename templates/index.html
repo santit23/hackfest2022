@@ -12,11 +12,10 @@
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
   
   <section class="showcase">
     <header>
-      <h2 class="logo">Huddle</h2>
+      <div class="logo"><a href="/">Huddle</a></div>
       <div class="toggle"></div>
     </header>
     <video autoplay loop muted plays-inline class="back-video">
@@ -40,7 +39,7 @@
   
       <main class="msger-chat">
         <div class="msg left-msg">
-          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+          <div class="msg-img" style="background-image: url(static/logo.png)"></div>
   
           <div class="msg-bubble">
             <div class="msg-info">
@@ -54,7 +53,7 @@
           </div>
         </div>
         <div class="msg left-msg">
-          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+          <div class="msg-img" style="background-image: url(static/logo.png)"></div>
   
           <div class="msg-bubble">
             <div class="msg-info">
@@ -68,7 +67,7 @@
           </div>
         </div>
         <div class="msg left-msg">
-          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+          <div class="msg-img" style="background-image: url(static/logo.png)"></div>
   
           <div class="msg-bubble">
             <div class="msg-info">
@@ -82,7 +81,7 @@
           </div>
         </div>
         <div class="msg left-msg">
-          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+          <div class="msg-img" style="background-image: url(static/logo.png)"></div>
   
           <div class="msg-bubble">
             <div class="msg-info">
@@ -91,7 +90,7 @@
             </div>
   
             <div class="msg-text">
-              Text HELP anytime to see what I can help with.
+              Text me anytime and I will see what I can help with.
             </div>
           </div>
         </div>
@@ -120,8 +119,6 @@
     </ul>
   </div>
 
-  
-  <!-- partial -->
   <script>const menuToggle = document.querySelector('.toggle');
     const showcase = document.querySelector('.showcase');
 
@@ -137,8 +134,7 @@
     const msgerChat = get(".msger-chat");
 
 
-    // Icons made by Freepik from www.flaticon.com
-    const BOT_IMG = "https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=";
+    const BOT_IMG = "static/logo.png";
     const PERSON_IMG = "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg";
     const BOT_NAME = "Huddle";
     const PERSON_NAME = "You";
@@ -155,7 +151,7 @@
     });
 
     function appendMessage(name, img, side, text) {
-      //   Simple solution for small apps
+    
       const msgHTML = `
 <div class="msg ${side}-msg">
   <div class="msg-img" style="background-image: url(${img})"></div>
@@ -177,7 +173,6 @@
 
     function botResponse(rawText) {
 
-      // Bot Response
       $.get("/get", { msg: rawText }).done(function (data) {
         console.log(rawText);
         console.log(data);
@@ -188,8 +183,6 @@
 
     }
 
-
-    // Utils
     function get(selector, root = document) {
       return root.querySelector(selector);
     }
@@ -200,7 +193,6 @@
 
       return `${h.slice(-2)}:${m.slice(-2)}`;
     }
-
 
 
   </script>

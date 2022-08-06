@@ -27,7 +27,6 @@
     height: 100vh;
     background-image: var(--body-bg);
     font-family: 'Poppins', sans-serif;
-    object-fit: fill;
   }
   
   .msger {
@@ -155,7 +154,7 @@
   
   .msger-chat {
     background-color: #fcfcfe;
-    background-image: url("https://static.wixstatic.com/media/31185e_d913f9f5fd7c4d1fab26c93f2a78eb7f~mv2.jpg/v1/fill/w_640,h_1296,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/31185e_d913f9f5fd7c4d1fab26c93f2a78eb7f~mv2.jpg");
+    background-image: url("https://www.techgrapple.com/wp-content/uploads/2016/07/WhatsApp-Chat-theme-iPhone.png");
   }
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
@@ -178,9 +177,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  header .logo
+  .logo a
   {
     color: #fff;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -213,7 +215,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #111; */
     transition: 0.5s;
     z-index: 2;
   }

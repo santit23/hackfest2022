@@ -11,9 +11,9 @@
           "Good day"
         ],
         "responses": [
-          "Hey! I am Huddle\nIf this is a life threatening emergency, please call 100\nIf you are having suicidal thoughts, please call Centre for Mental Health and Counselling-Nepal at 1660-01-85080\\nText HELP anytime to see what I can help with",
-          "Hello, thanks for visiting. I am Huddle\nIf this is a life threatening emergency, please call 100\nIf you are having suicidal thoughts, please call Centre for Mental Health and Counselling-Nepal at 1660-01-85080\\nText HELP anytime to see what I can help with",
-          "Hi there, I am Huddle\nIf this is a life threatening emergency, please call 100\nIf you are having suicidal thoughts, please call Centre for Mental Health and Counselling-Nepal at 1660-01-85080\\nText HELP anytime to see what I can help with"
+          "Hey! I am Huddle.",
+          "Hello, thanks for visiting. I am Huddle.",
+          "Hi there, I am Huddle."
         ]
       },
       {
@@ -38,19 +38,8 @@
           "I need help"
         ],
         "responses": [
-          "Here are some resources related to mental health\\nI hope it helps",
-          "Check out the Resources tab to find many helpful articles, videos, etc related to mental health\nI hope it helps"
-        ]
-      },
-      {
-        "tag": "talk",
-        "patterns": [
-          "I want to talk",
-          "I dont have anyone to talk to",
-          "Can I talk to you?"
-        ],
-        "responses": [
-          "Sure. I am here for you"
+          "What kind of help exactly? Can you be specific? Our Resources tab can be useful for you. Check it out.",
+          "What kind of help exactly? Can you be specific? Check out the Resources tab to find many helpful articles, videos, etc. related to mental health. I hope it will be useful for you."
         ]
       },
       {
@@ -60,7 +49,22 @@
           "Online support groups"
         ],
         "responses": [
-          "Connections: Support group for people with mental health conditions like schizophrenia, bipolar, sever depression, etc\nFor more info, please register here"
+          "There are support groups like- Connections: Support group for people with mental health conditions like schizophrenia, bipolar, sever depression, etc. For more info, please register here."
+        ]
+      },
+      {
+        "tag": "mentalhealth",
+        "patterns": [
+          "Mental Health",
+          "depression",
+          "Anxiety",
+          "suicide",
+          "die",
+          "take my life"
+        ],
+        "responses": [
+          "You are not alone. I really hope you check out the resources here.",
+          "Please check out the resources here. It can help you. Remember that you are not alone."
         ]
       }
     ]

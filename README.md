@@ -12,8 +12,6 @@ in terminal
 #Install necessary packages
 type "pip install -r requirements.txt" in terminal
 
-#train the data
-type "python training.py" in terminal to train the data
 
 #Running the program
 type "python app.py" in terminal and follow the link http://127.0.0.1:5000

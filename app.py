@@ -73,6 +73,18 @@ app.static_folder = 'static'
 def home():
     return render_template("index.html")
 
+@app.route("/resource")
+def resource():
+    return render_template("resource.html")
+
+@app.route("/aboutus")
+def aboutus():
+    return render_template("aboutus.html")
+
+@app.route("/map")
+def map():
+    return render_template("map.html")
+
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')

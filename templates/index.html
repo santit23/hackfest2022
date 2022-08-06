@@ -13,59 +13,122 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="#">HUDDLE</a>
-        </div>
-        <div class="list">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#">Smth</a></li>
-                <li><a href="#">Smth1</a></li>
-                <li><a href="#">Contact</a></li>
-            
-            </ul>
-        </div>
-    </div>
-    <div class="header_text">
-        <h1>
-            Your Friendly<br> ChatBot!!
-        </h1>
-        <a href="#" class="btn resources">RESOURCES</a>
-    </div>
-  </div>
-  <section class="msger">
-    <header class="msger-header">
-      <div class="msger-header-title">
-        Huddle
-      </div>
+  
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Huddle</h2>
+      <div class="toggle"></div>
     </header>
-
-    <main class="msger-chat">
-      <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
-
-        <div class="msg-bubble">
-          <div class="msg-info">
-            <div class="msg-info-name">Huddle</div>
-            
-          </div>
-
-          <div class="msg-text">
-            Hi, welcome to Huddle! Go ahead and send me a message. 😄
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="static/video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never </h2> 
+      <h3>Think that<br>YOU are Alone</h3>
+      <p>You dont need to find a lesson in your trauma.<br>
+         Just because no one else can heal or do your inner work for you doesnt mean you can, should, or need to do it alone.
+      </p>
+      <a href="{{ url_for('resource') }}">RESOURCES</a>
+    </div>
+    <section class="msger">
+      <header class="msger-header">
+        <div class="msger-header-title">
+          Huddle
+        </div>
+      </header>
+  
+      <main class="msger-chat">
+        <div class="msg left-msg">
+          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+  
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Huddle</div>
+              
+            </div>
+  
+            <div class="msg-text">
+              Hi, welcome to Huddle! Go ahead and send me a message. 😄
+            </div>
           </div>
         </div>
-      </div>
-
-    </main>
-
-    <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
-      <button type="submit" class="msger-send-btn">Send</button>
-    </form>
+        <div class="msg left-msg">
+          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+  
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Huddle</div>
+              
+            </div>
+  
+            <div class="msg-text">
+              If this is a life threatening emergency, please call 100.
+            </div>
+          </div>
+        </div>
+        <div class="msg left-msg">
+          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+  
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Huddle</div>
+              
+            </div>
+  
+            <div class="msg-text">
+              If you are having suicidal thoughts, please call Centre for Mental Health and Counselling-Nepal at 1660-01-85080.
+            </div>
+          </div>
+        </div>
+        <div class="msg left-msg">
+          <div class="msg-img" style="background-image: url(https://media.istockphoto.com/vectors/-vector-id1010001882?k=20&m=1010001882&s=612x612&w=0&h=6ZqzWlYBD3bT2EqJolzC3xbIKVVy350qMQmmS6B-Wd4=)"></div>
+  
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Huddle</div>
+              
+            </div>
+  
+            <div class="msg-text">
+              Text HELP anytime to see what I can help with.
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      </main>
+  
+      <form class="msger-inputarea">
+        <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+        <button type="submit" class="msger-send-btn">Send</button>
+      </form>
+    </section>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
   </section>
+  <div class="menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="{{ url_for('resource') }}">Resources</a></li>
+      <li><a href="{{ url_for('map') }}">Helpful Map</a></li>
+      <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+    </ul>
+  </div>
+
+  
   <!-- partial -->
+  <script>const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })</script>
   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
   <script>
 

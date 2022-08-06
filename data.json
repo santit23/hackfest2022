@@ -43,6 +43,17 @@
         ]
       },
       {
+        "tag": "talk",
+        "patterns": [
+          "I want to talk",
+          "I dont have anyone to talk to",
+          "Can I talk to you?"
+        ],
+        "responses": [
+          "Sure. I am here for you"
+        ]
+      },
+      {
         "tag": "supportgroup",
         "patterns": [
           "Support groups",

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="static/styles/style_resource.css" />
+        <title>Huddle</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+              <a href="index.html"><h2 class="logo">Huddle</h2></a>
+              <div class="toggle"></div>
+            </header>
+
+            <video src="static/video.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="card">
+                <h5 class="card-header">>How to stop worryin</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Instead of worrying about what you cannot control, shift your energy to what you can create</h5>
+                  <!-- <p class="card-text">Worries, doubts, and anxieties are a normal part of life. It’s natural to worry about an unpaid bill, an upcoming job interview, or a first date. But “normal” worry becomes excessive when it’s persistent and uncontrollable. You worry every day about “what ifs” and worst-case scenarios, you can’t get anxious thoughts out of your head, and it interferes with your daily life.</p> -->
+                  <a href="https://www.helpguide.org/articles/anxiety/how-to-stop-worrying.htm" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">How to cop with anxiety</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Do You Live with Anxiety? Here Are 13 Ways to Cope</h5>
+                  <!-- <p class="card-text">If you deal with anxiety, there are strategies you can use to avoid feeling consumed by it. Here are some quick solutions to help you address the situation immediately, as well as long-term methods to combat a recurring issue.</p> -->
+                  <a href="https://www.healthline.com/health/mental-health/how-to-cope-with-anxiety" class="btn btn-primary">Visit link</a>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Benefits of meditation</h5>
+                <div class="card-body">
+                  <h5 class="card-title">10 Mind-Blowing Benefits of Meditation</h5>
+                  <a href="https://www.youtube.com/watch?v=wXsxwIJnUJk" class="btn btn-primary">Watch video</a>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Focus on yourself</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Sadhguru on working upon yourself and upgrading yourself day by day.</h5>
+                  <a href="https://www.youtube.com/watch?v=JAmOtrQNVGw" class="btn btn-primary">Watch Video</a>
+                </div>
+              </div>
+            <!-- <div class="text">
+                <h2>Never </h2> 
+                <h3>Think that<br>YOU are Alone</h3>
+                <p>You dont need to find a lesson in your trauma.<br>
+                   Just because no one else can heal or do your inner work for you doesnt mean you can, should, or need to do it alone.
+                </p>
+                <a href="{{ url_for('resource') }}">RESOURCES</a>
+            </div> -->
+            <ul class="social">
+              <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            </ul>
+        </section>
+          <div class="menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{{ url_for('resource') }}">Resources</a></li>
+              <li><a href="{{ url_for('map') }}">Helpful Map</a></li>
+              <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+            </ul>
+          </div>
+          
+    </body>
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</html>
